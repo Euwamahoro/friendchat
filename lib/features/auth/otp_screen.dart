@@ -1,6 +1,6 @@
+import 'package:friendchat/features/profile/profile_setup_screen.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:friendchat/features/auth/home/main_screen.dart';
 
 class OtpScreen extends StatefulWidget {
   final String phoneNumber;
@@ -100,17 +100,19 @@ class _OtpScreenState extends State<OtpScreen> {
         ),
       );
 
-      // Navigate to main screen after a short delay
-      Future.delayed(const Duration(milliseconds: 1500), () {
-        if (!mounted) return;
-
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const MainScreen(),
+      // Navigate to profile screen after a short delay
+    Future.delayed(const Duration(milliseconds: 1500), () {
+      if (!mounted) return;
+      
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ProfileSetupScreen(
+            phoneNumber: widget.phoneNumber,
           ),
-        );
-      });
+        ),
+      );
+    });
 
       print('✅ Verification successful for ${widget.phoneNumber}');
     });

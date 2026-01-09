@@ -55,6 +55,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '636653464866',
     projectId: 'friendchat-e62e7',
     storageBucket: 'friendchat-e62e7.firebasestorage.app',
+    databaseURL: 'https://console.firebase.google.com/u/0/project/friendchat-e62e7/firestore/databases/enockdev'
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -64,6 +65,7 @@ class DefaultFirebaseOptions {
     projectId: 'friendchat-e62e7',
     storageBucket: 'friendchat-e62e7.firebasestorage.app',
     iosBundleId: 'com.example.flutterApplication1',
+    databaseURL: 'https://console.firebase.google.com/u/0/project/friendchat-e62e7/firestore/databases/enockdev'
   );
 
   static const FirebaseOptions macos = FirebaseOptions(

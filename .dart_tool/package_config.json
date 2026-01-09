@@ -33,7 +33,7 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///C:/Users/HP%20EliteBook/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore-4.10.0",
+      "rootUri": "file:///C:/Users/HP%20EliteBook/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore-4.16.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
